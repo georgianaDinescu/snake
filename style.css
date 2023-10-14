@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+}
+
+/*Animation*/
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+.bg3 {
+  animation-duration:5s;
+}
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+/*Game*/
+.gameContainer{
+    text-align: center;
+}
+#gameBoard{
+    margin-top: 5px;
+    box-shadow: 8px 8px 5px #2d3436;
+}
+#scoreText{
+    font-family: "Permanent Marker", cursive;
+    font-size: 2em;
+    color: #f7f1e3;
+}
+#resetBtn{
+    font-family: "Permanent Marker", cursive;
+    color: #f7f1e3;
+}
